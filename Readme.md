@@ -13,7 +13,7 @@ This is an E-Commerce API built using FastAPI and MongoDB. The API provides endp
 - [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
 - [Folder Structure](#folder-structure)
-- [Testing Endpoints](#license)
+- [Testing Endpoints](#testing-the-endpoints)
 
 ## Features
 
