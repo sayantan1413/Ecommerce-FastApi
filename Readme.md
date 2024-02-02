@@ -37,11 +37,20 @@ This is an E-Commerce API built using FastAPI and MongoDB. The API provides endp
    cd ecommerce-api
    ```
 
-2. Create Virtual Environment
+2. Create Virtual Environment and configure env
 
    ```bash
    python3 -m venv venv
    source venv/bin/activate
+
+   # Configure ENV file
+
+   touch .env
+
+   # Add this line in ENV
+
+   MONGODB_ATLAS_CONNECTION_STRING="your_connection_string"
+
    ```
 
 3. Install dependencies:
@@ -103,17 +112,21 @@ ecommerce-api/
 
 ### Add Products
 
-Description: This endpoint is responsible to add a product.
+#### Description:
 
-Https Method: Post
+This endpoint is responsible to add a product.
 
-Curl Request:
+#### Https Method:
+
+Post
+
+#### Curl Request:
 
 `curl --location 'http://127.0.0.1:8000/products/add-product/' \
 --header 'Content-Type: application/json' \
 --data '{"name": "Asus Laptop", "price": 200.00, "quantity": 30}'`
 
-Example Response
+#### Example Response
 
 `{
     "id": "65bcebf526dea3612c07a761",
@@ -124,20 +137,24 @@ Example Response
 
 ### Get All Products
 
-Description: This endpoint is responsible to list all the products available.
+#### Description:
 
-Https Method: Get
+This endpoint is responsible to list all the products available.
 
-Curl Request:
+#### Https Method:
+
+Get
+
+#### Curl Request:
 
 `curl --location 'http://localhost:8000/products/products/'`
 
-Optional Parameters:
+#### Optional Parameters:
 
 1. min_price
 2. max_price
 
-Example Response
+#### Example Response
 
 `{
     "data": [
@@ -170,11 +187,15 @@ Example Response
 
 ### Create Orders
 
-Description: This endpoint is responsible to create a order with list of products.
+#### Description:
 
-Https Method: Post
+This endpoint is responsible to create a order with list of products.
 
-Curl Request:
+#### Https Method:
+
+Post
+
+#### Curl Request:
 
 `curl --location 'http://localhost:8000/orders/create-order/' \
 --header 'Content-Type: application/json' \
@@ -193,7 +214,7 @@ Curl Request:
   }
 }'`
 
-Example Response
+#### Example Response
 
 `{
     "id": "65bb865450c1712e89216785",
