@@ -74,7 +74,7 @@ This is an E-Commerce API built using FastAPI and MongoDB. The API provides endp
 
 2. Open [http://localhost:8000/docs](http://localhost:8000/docs) in your browser to access the Swagger documentation.
 
-3. Explore and test the API using the interactive Swagger UI.
+3. Explore and test the API using the interactive Swagger UI or in the base URL [http://localhost:8000/](http://localhost:8000/) .
 
 ## API Endpoints
 
