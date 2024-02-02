@@ -45,11 +45,14 @@ This is an E-Commerce API built using FastAPI and MongoDB. The API provides endp
 
    # Configure ENV file
 
+   cd server
    touch .env
 
    # Add this line in ENV
 
    MONGODB_ATLAS_CONNECTION_STRING="your_connection_string"
+
+   cd ..
 
    ```
 
